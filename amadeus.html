@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="client.html">
+  <link rel="stylesheet" href="reissue.html">
+  <link rel="stylesheet" href="refund.html">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <title>Amadeus</title>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <section>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="amadeus.html">Amadeus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="amadeus.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reissue.html">Reissue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="refund.html">Refund</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="client.html">Client</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="useful.html">Useful</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- End Navbar -->
+  <!-- Create a PNR in Amadeus -->
+  <section>
+    <div>
+      <h3>Search the availability :</h3>
+      <p>AN21DECDACBKK/ATG</p>
+      <p>AN12JANBKKDAC/ATG</p>
+      <p>AN12JANDACDXB/AEK</p>
+      <p>AN12JANDXBDAC/ABG</p>
+      <h3>Select Seats :</h3>
+      <p>SS1K1 >> <small>Select Segment 1 in class K for 1 Pax</small></p>
+      <p>SS1B2 >> <small>Select Segment 1 in class B for 2 Pax</small></p>
+
+      <h3>Insert Name as Below :</h3>
+      <p><b>For Adult</b> : NM1KHAN/JAWAD ASHRAF MR</p>
+      <p><b>Infant with Adult</b>: NM1BANNA/RAFIQUN NAHAR MRS(INFKHAN/AFIA ABIDA/12DEC19)</p>
+      <p> <b>For Child</b>: NM1KHAN/AFIA ABIDA MISS(CHD/06DEC15)</p>
+
+      <h3>Agency Phone Field :</h3>
+      <p>AP DAC AGT CTCM 01670246489 REF HEXA AIR LIMITED</p>
+      <h3>Passenger Phone Field :</h3>
+      <p>AP DAC PAX CTCM 01670246489 REF JAWAD</p>
+      <h3>Ticket Time Limit Field :</h3>
+      <p>TKTL15DEC or TKOK</p>
+      <h3>Received Field :</h3>
+      <p>RFJ;ER</p>
+      <p>ER</p>
+      <p>IR</p>
+    </div>
+  </section>
+  <section>
+    <br>
+    <H3><b>Basic PNR Creation :</b></H3>
+    <small>
+      <p>AN21DECDACBKK/ATG</p>
+      <p>SS1Y1</p>
+      <p>AN25DECBKKDAC/ATG</p>
+      <p>SS1Y1</p>
+      <p>NM1KHAN/JAWAD ASHRAF MR</p>
+      <p>AP DAC AGT CTCM 01670246489 REF HEXA AIR LIMITED</p>
+      <p>AP DAC PAX CTCM 01670246489 REF JAWAD</p>
+      <p>TKOK</p>
+      <p>RFJ;ER</p>
+      <p>ER</p>
+      <p>IR <small>(Note : Ignore and Redisplay)</small></p>
+    </small>
+  </section>
+
+  <section>
+    <H3>Insert Document</H3>
+    <p>SR DOCS TK HK1-P-BGD-BJ0652730-BGD-21DEC73-M-22DEC20-HOQUE-ZIAUL</p>
+    <p>SR DOCS TG HK1-P-BGD-BL0413983-BGD-20SEP15-M-23JUL21-IMRAN-A S M ABIYAAN/P2</p>
+  </section>
+
+  <section>
+    <H3>How to change the segment status code</H3>
+    <p>2/HK (line 2)</p>
+  </section>
+  <section>
+    <H3>Exchange Rate : FQC50USD/BDT</H3>
+  </section>
+  <section>
+    <H3>Ticket Image in Amadeus >> <b> TWD/TKT176-XXXXXXXXXX </b></H3>
+  </section>
+  <section>
+    <H3>Change the booking class</H3>
+    <p>SBC2,5 <small> <b> >> Change to Class C for segment 2 & 5</b></small></p>
+  </section>
+
+  <section>
+    <H3>Sharing Amadeus PNR:</H3>
+    <table>
+      <tr>
+        <th>Agency</th>
+        <th>Sharing ID</th>
+      </tr>
+      <tr>
+        <td>Sadia Travels</td>
+        <td>ESDACVS32FY-B</td>
+      </tr>
+      <tr>
+        <td>Hajee Air Travels 1</td>
+        <td>ESDACVS3716-B</td>
+      </tr>
+      <tr>
+        <td>Hajee Air Travels 2</td>
+        <td>ESDACVS32BB-B</td>
+      </tr>
+      <tr>
+        <td>Meraj Travels</td>
+        <td>ESDACVS3485-B</td>
+      </tr>
+    </table>
+    <p>then <b>Receive</b></p>
+  </section>
+
+  <section>
+    <H3>Split a Pax from a PNR</H3>
+    <p>SP2 <small>(Split Pax No 2)</small></p>
+    <p>RFJ;EF</p>
+    <p>RFJ;ER</p>
+    <p>ER</p>
+  </section>
+  <section>
+    <H3>To check if the ticket is ready for issue is</H3>
+    <p>TTP/TKT/ET/P1</p>
+    <p>TTP/TKT/ET/P2</p>
+  </section>
+  <section>
+    <H3>How to check the Penalties of a PNR</H3>
+    <p>Open the PNR</p>
+    <p>FXX</p>
+    <p>FQN01-1*PE</p>
+    <p>FQN01-2*PE</p>
+  </section>
+  <section>
+    <H3>Issue a PNR</H3>
+    <p>FM7</p>
+    <p>FPINVAGT*HEXA AIR LIMITED</p>
+    <p>RFJ;ER</p>
+    <p>TTP/RT/P1 (Issue pax 1)</p>
+    <p>RT</p>
+    <p>TTP/RT/P2 (Issue pax 1)</p>
+    <p>All Pax Issue >> TTP/RT</p>
+    <p>RT or IR</p>
+
+  </section>
+  <table>
+    <H3>Some useful command</H3>
+    <tr>
+      <th>Description</th>
+      <th>Command</th>
+    </tr>
+    <tr>
+      <td>Insert Mob No in PNR</td>
+      <td>SR CTCM YY HK1-01670246489</td>
+    </tr>
+    <tr>
+      <td>Insert email address in PNR</td>
+      <td>SR CTCE YY HK1-HEXAAIRLIMITED//GMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>Move Down / Move Up</td>
+      <td>MD / MU</td>
+    </tr>
+    <tr>
+      <td>Move Next Day / Move Yesterday</td>
+      <td>MN / MY</td>
+    </tr>
+    <tr>
+      <td>Move to Previous Availability</td>
+      <td>MPAN</td>
+    </tr>
+    <tr>
+      <td>Currency conversion</td>
+      <td>FQC100/EUR or FQC200GBP/SGD</td>
+    </tr>
+    <tr>
+      <td>Frequent Flyer</td>
+      <td>FFNTG-12345677 or FFNEK-12345677</td>
+    </tr>
+    <tr>
+      <td>TKT Void command</td>
+      <td>TRDC/L + ticket line number</td>
+    </tr>
+    <tr>
+      <td>Ticket copy to email </td>
+      <td>IEPJ-EML-HEXAAIRLIMITED@GMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>Ticket Invoice copy to email</td>
+      <td>ITR-EML-HEXAAIRLIMITED@GMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>Hajee CUST </td>
+      <td>RM*CUST657 >> Hexa Account No 657</td>
+    </tr>
+    <tr>
+      <td>TST DELETE</td>
+      <td>TTE/ALL</td>
+    </tr>
+    <tr>
+      <td>Wheel Chair Req</td>
+      <td>SR WCHR - Pax is old person difficult to walk long distance</td>
+    </tr>
+    <tr>
+      <td>Wheel Chair Req</td>
+      <td>SRWCHR/P2/S3-4</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <footer>Developed by @ Jawad A Khan</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</html>
