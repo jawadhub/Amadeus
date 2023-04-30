@@ -19,7 +19,7 @@
 <body>
   <!-- Nav Bar -->
   <section>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Amadeus</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -61,8 +61,8 @@
       <p>6. Check reissue charge</p>
       <p>7. TTK/EXCH (within the PNR)</p>
       <p>8. RFJ;ER > ER > IR (Receive)</p>
-      <p>Delete Previous Fare & Load new fare <b>FXP</b>, then receive</p>
-      <p>9. TQT (Put TQT Graphics mood On)</p>
+      <p>9. Delete Previous Fare & Load new fare <b>FXP/S2-5</b>, then receive</p>
+      <p>10. TQT (Put TQT Graphics mood On)</p>
       <div>
         <img class="img-fluid w-75"  src="img/reissue101.png" alt="">
       </div>
@@ -78,16 +78,67 @@
     <p>15. RFJ;ER > ER > IR (Receive)</p>
     <p>16. Delete <b>Commission Entry</b> & <b>Invoice Entry</b> </p>
     <p>17. RFJ;ER > ER > IR (Receive)</p>
-    <p>18. FM7 >> If difference of fare is more than <b>Zero</b> </p>
+    <p>18. FM7 or FM0 >> If difference of fare is more than <b>Zero</b> </p>
     <p>19. FPO/INV+/INV*HEXA AIR</p>
     <p>20. RFJ;ER > ER > IR (Receive)</p>
-    <p>21.<b>TTF </b>(tst FLAG REMOVE) <b>TST FLAG REMOVED</b> </p>
-    <p>22. RFJ;ER > ER > IR (Receive)</p>
-    <p>23. TWD (Optional, last time to see the schedule)</p>
-    <p>24. TTP/TKT/ET (To check if it is OK to reissue)</p>
-    <p>25. TTP/RT</p>
-    <p>26. RT or IR</p>
+    <p>21. FO* or FO*L19/P1 (L19 >> Ticket Line Number)</p>
+    <p>22.<b>TTF </b>(tst FLAG REMOVE) <b>TST FLAG REMOVED</b> </p>
+    <p>23. RFJ;ER > ER > IR (Receive)</p>
+    <p>24. TWD (Optional, last time to see the schedule)</p>
+    <p>25. TTP/TKT/ET (To check if it is OK to reissue)</p>
+    <p>26. TTP/RT</p>
+    <p>27. RT or IR</p>
   </section>
+  <!-- Reissue Instruction -->
+  <section class="text-center">
+    <h3>First Reissue within same PNR - Half/Partial Reissue</h3>
+    <div>
+      <p>1. Rebook the new itinerary.</p>
+      <p>2. Check New Fare >> <b>FXX/S2-3,6-7/R,19APR23</b>(R,IssueDate)</p>
+      <p>3. Check the Fare Difference & Tax Difference of Old Ticket & New Ticket:</p>
+      <p>4. Check Previous ticket Image >> TWD/TKT157-XXXXXXXXXX</p>
+      <p>5. Check Previous Tax Image >> TWD/TAX</p>
+      <p>6. Check reissue fees of Old ticket</p>
+      <p>7. Delete Previous TST >> <b>TTE/ALL</b></p>
+      <p>8. Load new fare >> <b>FXP/S2-3,6-7/R,19APR2023</b></p>
+      <p>9. RFJ;ER > ER > IR (Receive)</p>
+      <p>10. Update TST for only partial segment >> <b>TTU/S6-7 (in this case Return segment)</b></p>
+      <p>11. RFJ;ER > ER > IR (Receive)</p>
+      <p>12. TTK/EXCH (within the PNR)</p>
+      <p>13. RFJ;ER > ER > IR (Receive)</p>
+      <p>14. TQT (Put TQT Graphics mood On)</p>
+      <div>
+        <img class="img-fluid w-75"  src="img/reissue101.png" alt="">
+      </div>
+    </div>
+    <p>15. Put difference of fare on “Equivalent Fare” field</p>
+    <p>16. Put Reissue Charges & Tax difference on “Taxes” field</p>
+    <p>17. Equivalent Fare & Taxes must be equal to <b>TOTAL</b></p>
+    <div>
+      <img src="img/reissue102.jpg" alt="">
+    </div>
+    <p>18. Update the <b>Banker's Rate</b> Field</p>
+    <p>19. Update & saved TST</p>
+    <p>20. RFJ;ER > ER > IR (Receive)</p>
+    <p>21. Delete <b>Commission Entry</b> & <b>Invoice Entry</b> </p>
+    <div>
+      <img src="img/reissue103.jpeg" alt="">
+      <figcaption class="figure-caption">Pic : Delete all Invoice & Commission line(22,23,24)</figcaption>
+    </div>
+    <p>22. RFJ;ER > ER > IR (Receive)</p>
+    <p>23. FM7 or FM0 >> If difference of fare is more than <b>Zero</b> </p>
+    <p>24. FPO/INV+/INV*HEXA AIR</p>
+    <p>25. RFJ;ER > ER > IR (Receive)</p>
+    <p>26. FO* or FO*L19/P1 (L19 >> Ticket Line Number)</p>
+    <p>27. RFJ;ER > ER > IR (Receive)</p>
+    <p>28. Optional : <b>TTF </b>(tst FLAG REMOVE) <b>TST FLAG REMOVED</b> </p>
+    <p>29. RFJ;ER > ER > IR (Receive)</p>
+    <p>30. TWD (Optional, last time to see the schedule)</p>
+    <p>31. TTP/TKT/ET (To check if it is OK to reissue)</p>
+    <p>32. TTP/RT</p>
+    <p>33. RT or IR</p>
+  </section>
+
   <section>
     <h3>Some Error & Solution:</h3>
   <p>1. To Map the actual TST number: <b>TTP/TKT/T3 (If TQT on number 3)</b></p>
